@@ -68,21 +68,16 @@
       function redirWhatsapp() {
         window.location.href = "https://wa.me/+6287763082104"
       }
-      
+         
       function getVisitorCount() {
-        var url = "https://your-server-side-script-url.com/get-visitor-count"; // Replace with your server-side script URL
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, true);
-        xhr.onload = function() {
-          if (xhr.status === 200) {
-            var visitorCount = JSON.parse(xhr.responseText).count;
-            document.getElementById("visitor-count").innerHTML = visitorCount + " Review";
-          }
-        };
-        xhr.send();
+        fetch('https://api.countapi.xyz/hit/thisonky.vercel.app')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById("visitor-count").innerHTML = data.value + " Review";
+          });
       }
 
-      getVisitorCount(); // Call the function to fetch and update the visitor count
+      getVisitorCount(); // Call the function to fetch and update the visitor count 
     </script>
   </body>
 </html>

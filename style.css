@@ -78,7 +78,7 @@
  .container {
  	max-width: 1200px;
  	margin: 0 auto;
- 	padding: 0;
+ 	padding: 10px;
  }
  
  .intro {
@@ -168,7 +168,7 @@
  }
  
  footer {
- 	padding: 5px;
+ 	padding: 70px;
  	text-align: center;
  	background: #1A2238;
  	color: #eaeaea;

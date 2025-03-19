@@ -81,22 +81,36 @@ a {
 }
 
 .intro {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	text-align: center;
+  position: relative; /* Menjadikan posisi relatif untuk overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
 }
 
-.title {
-	font-size: 24px;
-	font-weight: bold;
+.overlay {
+  position: absolute; /* Menempatkan overlay di atas gambar */
+  top: 50%; /* Menempatkan di tengah vertikal */
+  left: 50%; /* Menempatkan di tengah horizontal */
+  transform: translate(-50%, -50%); /* Menggeser ke tengah */
+  background: rgba(26, 34, 56, 0.7); /* Latar belakang semi-transparan */
+  padding: 20px; /* Memberikan padding */
+  border-radius: 10px; /* Membuat sudut membulat */
 }
 
-.description {
-	font-size: 28px;
-	font-weight: bolder;
+.title, .description {
+  color: #eaeaea; 
+}
+
+.overlay:hover {
+  background: rgba(26, 34, 56, 0.9); /* Menggelapkan latar belakang saat hover */
+}
+
+.overlay:hover .title,
+.overlay:hover .description {
+  color: #FF6A3D; /* Mengubah warna teks saat hover */
 }
 
 .img-foto {

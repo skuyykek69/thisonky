@@ -81,43 +81,26 @@ a {
 }
 
 .intro {
-  position: relative; /* Menjadikan posisi relatif untuk overlay */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   text-align: center;
-}
-
-.overlay {
-  position: absolute; /* Menempatkan overlay di atas gambar */
-  top: 50%; /* Menempatkan di tengah vertikal */
-  left: 50%; /* Menempatkan di tengah horizontal */
-  transform: translate(-50%, -50%); /* Menggeser ke tengah */
-  background: rgba(26, 34, 56, 0.7); /* Latar belakang semi-transparan */
+  position: relative; /* Menjadikan posisi relatif untuk overlay */
+  background: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
   padding: 20px; /* Memberikan padding */
   border-radius: 10px; /* Membuat sudut membulat */
 }
 
-.title, .description {
-  color: #eaeaea; 
-}
-
-.overlay:hover {
-  background: rgba(26, 34, 56, 0.9); /* Menggelapkan latar belakang saat hover */
-}
-
-.overlay:hover .title,
-.overlay:hover .description {
-  color: #FF6A3D; /* Mengubah warna teks saat hover */
-}
-
 .img-foto {
-	width: 100%;
-	height: auto;
-	padding: 10px;
-	max-width: 500px;
+  position: absolute; /* Menempatkan gambar di belakang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1; /* Menempatkan gambar di belakang konten */
+  opacity: 0.5; /* Mengatur transparansi gambar */
 }
 
 .parallax {

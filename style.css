@@ -166,7 +166,11 @@
  	margin: 10px;
  	padding: 4px;
  }
- 
+
+.visitor {
+	padding-top: 5px;
+	padding-bottom: 10px;
+
  footer {
  	padding: 30px 10px;
  	text-align: center;

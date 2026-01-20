@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | 𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <strong>Portofolio</strong>
+    <div class="nav-right">
+        <div class="nav-links">
+            <a href="#about">Tentang</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <span class="toggle" id="themeToggle">🌙</span>
+        <span class="hamburger" id="hamburger">☰</span>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Halo, Saya Fajar Onky Hariadi</h1>
+        <p>Worker | Multitalented Freelancer</p>
+        <a href="#projects">Lihat Proyek</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+Saya adalah seorang profesional lintas industri yang berdedikasi dengan rekam jejak luas
+di bidang teknis, operasional, hingga layanan pelanggan. Saya tidak sekadar bekerja,
+melainkan terus belajar dan beradaptasi terhadap setiap tantangan yang dihadapi.
+</p>
+
+<p>
+Dengan pengalaman mulai dari ketelitian teknis di industri manufaktur kayu dan mekanik,
+hingga solusi digital sebagai praktisi IT freelance, saya memiliki kemampuan unik untuk
+memahami permasalahan dari berbagai sudut pandang.
+</p>
+
+<p>
+Perjalanan karier saya di bidang retail, farmasi, dan otomotif (detailing) membentuk saya
+menjadi pribadi yang detail, adaptif, dan berorientasi pada hasil. Saya percaya bahwa
+kombinasi antara keterampilan teknis langsung (hands-on) dan pemikiran analitis digital
+memungkinkan saya memberikan solusi yang praktis dan efisien dalam setiap proyek
+yang saya tangani.
+</p>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Proyek</h2>
+
+    <div class="projects">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card" onclick="openModal('modalProject1')">
+            <img src="img/project1.jpg" alt="Undangan Pernikahan Digital">
+            <h3>Undangan Digital</h3>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" onclick="openModal('modalProject2')">
+            <img src="img/project2.png" alt="Financial Record">
+            <h3>Financial Record</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modalProject1">
+    <span class="close" onclick="closeModal('modalProject1')">✕</span>
+
+    <div class="modal-content">
+        <img src="img/project1.jpg" alt="Project 1">
+
+        <div class="modal-body">
+            <h3>Undangan Digital</h3>
+            <p>
+                Website undangan pernikahan digital yang praktis dan modern.
+                Memudahkan penyebaran undangan dalam jumlah besar
+                dengan waktu yang sangat singkat.
+            </p>
+            <a href="https://beta-invitation.vercel.app" target="_blank">
+                Review Project
+            </a>
+        </div>
+    </div>
+</div>
+    
+<div class="modal" id="modalProject2">
+    <span class="close" onclick="closeModal('modalProject2')">✕</span>
+
+    <div class="modal-content">
+        <img src="img/project2.jpg" alt="Financial Record">
+
+        <div class="modal-body">
+            <h3>Financial Record</h3>
+            <p>
+                Aplikasi berbasis web untuk pencatatan keuangan sederhana
+                dengan sistem rekap total pemasukan dan pengeluaran.
+            </p>
+            <a href="https://kek-finance.web.app" target="_blank">
+                Review Project
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: kekprojects@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/thisonky</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
